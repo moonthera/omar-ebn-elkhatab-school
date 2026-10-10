@@ -55,47 +55,38 @@ background-color:black;
      }
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-        html {
-            box-sizing: border-box;
-        }
+.custom-section {
+    background: #fff;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-right: 5px solid #d35400;
+}
+.custom-section h2 {
+    color: #d35400;
+    margin-top: 0;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+.activity-card {
+    background: #fff8f0;
+    border: 1px solid #fae5d3;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+}
+.activity-card h3 { color: #e67e22; margin-top: 0; font-size: 18px; }
+.activity-card p { color: #555; font-size: 14px; line-height: 1.6; }
 
-        *, *:before, *:after {
-            box-sizing: inherit;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            overflow-x: hidden;
-        }
-
-        img, video, canvas, svg {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .container, .row, .grid, section {
-            width: 100%;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-
-        @media screen and (max-width: 768px) {
-            body {
-                font-size: 100%;
-            }
-            
-            .flex-container, .row {
-                flex-direction: column;
-            }
-        }
-
+   
   
   </style>
 
@@ -141,8 +132,22 @@ background-color:black;
   <div class="landing-page">
   <h2>نعمل جاهدين على توفير بيئة تعليميه تفاعليه تعتمد على احدث الوسائل التكنولوجيا في تدريس اللغات والعلوم, مع الحفاظ على الهوية الوطنيه والقيم الاخلاقية . هدفنا ليس مجرد نجاح اكاديميه, بل اعداد جيل من المبدعين والمفكرين القادرين على تمثيل مدرينة رشيد ومصر في المحافل الدوليه بكل ثقه واقتدار .</h2>
   </div>
- <div style=background-color:#fc4903;display:flex;>
-   <div class=<"header-links">
-     <button>gallery</button>
+<!-- قسم الأنشطة والفعاليات -->
+<div class="custom-section">
+    <h2>أنشطة وفعاليات المدرسة</h2>
+    <div class="activities-grid">
+        <div class="activity-card">
+            <h3>الأنشطة الرياضية والبدنية</h3>
+            <p>بطولات كرة القدم، تنس الطاولة، والتمارين الصباحية لتنمية لياقة الطلاب وحيويتهم.</p>
+        </div>
+        <div class="activity-card">
+            <h3>معامل اللغات والتكنولوجيا</h3>
+            <p>تفعيل حصص المحادثة باللغات الأجنبية واستخدام أحدث الوسائل التكنولوجية في التعلم.</p>
+        </div>
+        <div class="activity-card">
+            <h3>الرحلات المدرسية</h3>
+            <p>تنظيم زيارات ميدانية تثقيفية وترفيهية لأبرز معالم مدينة رشيد التاريخية والمحافظة.</p>
+        </div>
     </div>
+</div>
 </body>
