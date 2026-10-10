@@ -54,7 +54,51 @@ background-color:black;
       background-color:orange;
      }
 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            box-sizing: border-box;
+        }
 
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        img, video, canvas, svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container, .row, .grid, section {
+            width: 100%;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 100%;
+            }
+            
+            .flex-container, .row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+  
   </style>
 
   <div class="logo">
